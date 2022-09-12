@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RossNation Server Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <ol class="widget">
+      <p class="header">• Minecraft Server Controller •</p>
+      <li class="serverCard" id="loading">
+        <div class="card-info">
+          <p class="card-title">Loading Servers...</p>
+        </div>
+        <div class="card-control">
+
+        </div>
+      </li>
+      <li id="stats">
+        <div class="serverCard statCard" id="cpu">
+          <p>CPU: 0%</p>
+        </div>
+        <div class="serverCard statCard" id="ram">
+          <p>RAM: 0%</p>
+        </div>
+        <div class="serverCard statCard" id="disc">
+          <p>Disc: 0%</p>
+        </div>
+      </li>
+    </ol>
+    <div class="widget" id="error">
+      <span>Connection Failed.</span>
+      <span class="card-status" id="retry">Retry?</span>
+    </div>
+  </body>
+</html>
